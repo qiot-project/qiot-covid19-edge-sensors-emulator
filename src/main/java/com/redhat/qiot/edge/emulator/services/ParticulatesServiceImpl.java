@@ -83,6 +83,10 @@ class ParticulatesServiceImpl implements ParticulatesService {
     }
 
     private PartuculatesBean generateMeasurement() {
+        if(!randomPM1_0Iterator.hasNext()) {
+            LOGGER.info("Iterators depleted for PARTICULATE measurements. Refreshing rundom number generators...");
+            init();
+        }
         PartuculatesBean bean = new PartuculatesBean();
 //        bean.setReducing(randomReducingIterator.next());
         bean.setPM1_0(randomPM1_0Iterator.nextInt());
