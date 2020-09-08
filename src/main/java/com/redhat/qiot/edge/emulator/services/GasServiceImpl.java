@@ -11,7 +11,8 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-
+import javax.json.bind.Jsonb;
+import javax.json.bind.JsonbBuilder;
 
 import org.slf4j.Logger;
 
@@ -28,8 +29,7 @@ import com.redhat.qiot.edge.emulator.util.RandomGeneratorProducer;
  */
 @ApplicationScoped
 class GasServiceImpl implements GasService {
-
-    private final ObjectMapper MAPPER = new ObjectMapper();
+    Jsonb jsonb = JsonbBuilder.create();
 
     @Inject
     RandomGeneratorProducer randomGeneratorProducer;
@@ -73,7 +73,7 @@ class GasServiceImpl implements GasService {
 
     @Override
     public String produceAsString() throws Exception {
-        return MAPPER.writeValueAsString(generateMeasurement());
+        return jsonb.toJson(generateMeasurement());
     }
 
     private GasBean generateMeasurement() {

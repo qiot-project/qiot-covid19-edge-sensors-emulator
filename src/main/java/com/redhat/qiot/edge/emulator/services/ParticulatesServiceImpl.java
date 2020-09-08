@@ -6,14 +6,13 @@ package com.redhat.qiot.edge.emulator.services;
 
 import java.util.PrimitiveIterator;
 
-
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-
+import javax.json.bind.Jsonb;
+import javax.json.bind.JsonbBuilder;
 
 import org.slf4j.Logger;
-
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.redhat.qiot.edge.emulator.domain.ParticulatesGeneratorConfigService;
@@ -27,8 +26,7 @@ import com.redhat.qiot.edge.emulator.util.RandomGeneratorProducer;
  */
 @ApplicationScoped
 class ParticulatesServiceImpl implements ParticulatesService {
-    
-    private final ObjectMapper MAPPER=new ObjectMapper();
+    Jsonb jsonb = JsonbBuilder.create();
 
     @Inject
     RandomGeneratorProducer randomGeneratorProducer;
@@ -79,7 +77,7 @@ class ParticulatesServiceImpl implements ParticulatesService {
 
     @Override
     public String produceAsString() throws Exception {
-        return MAPPER.writeValueAsString(generateMeasurement());
+        return jsonb.toJson(generateMeasurement());
     }
 
     private PartuculatesBean generateMeasurement() {
