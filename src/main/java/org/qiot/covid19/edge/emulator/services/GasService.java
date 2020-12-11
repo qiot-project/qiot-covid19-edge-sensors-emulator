@@ -1,10 +1,10 @@
 /**
  * 
  */
-package com.redhat.qiot.edge.emulator.services;
+package org.qiot.covid19.edge.emulator.services;
 
 
-import com.redhat.qiot.edge.emulator.domain.GasBean;
+import org.qiot.covid19.edge.emulator.domain.GasBean;
 
 
 /**

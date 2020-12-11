@@ -1,1 +1,0 @@
-package com.redhat.qiot.edge.emulator.domain;

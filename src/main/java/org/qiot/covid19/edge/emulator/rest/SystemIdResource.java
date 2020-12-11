@@ -1,4 +1,4 @@
-package com.redhat.qiot.edge.emulator.rest;
+package org.qiot.covid19.edge.emulator.rest;
 
 
 import javax.enterprise.context.ApplicationScoped;

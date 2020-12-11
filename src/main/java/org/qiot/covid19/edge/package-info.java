@@ -5,4 +5,4 @@
  * @author Andrea
  *
  */
-package com.redhat.qiot.edge.emulator;
+package org.qiot.covid19.edge;

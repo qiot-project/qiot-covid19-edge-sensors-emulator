@@ -1,10 +1,10 @@
 /**
  * 
  */
-package com.redhat.qiot.edge.emulator.services;
+package org.qiot.covid19.edge.emulator.services;
 
 
-import com.redhat.qiot.edge.emulator.domain.PartuculatesBean;
+import org.qiot.covid19.edge.emulator.domain.PartuculatesBean;
 
 
 /**

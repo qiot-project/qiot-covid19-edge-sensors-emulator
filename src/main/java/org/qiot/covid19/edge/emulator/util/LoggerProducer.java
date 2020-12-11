@@ -1,4 +1,4 @@
-package com.redhat.qiot.edge.emulator.util;
+package org.qiot.covid19.edge.emulator.util;
 
 import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;

@@ -1,0 +1,1 @@
+package org.qiot.covid19.edge.emulator.domain;

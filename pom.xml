@@ -4,21 +4,21 @@
     xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.redhat.qiot.edge</groupId>
+    <groupId>org.qiot.covid19.edge</groupId>
     <artifactId>qiot-edge-sensors-emulator</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-  <properties>
+    <properties>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
-    <quarkus-plugin.version>1.8.0.Final</quarkus-plugin.version>
-    <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
-    <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-    <quarkus.platform.version>1.8.0.Final</quarkus.platform.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
+        <quarkus-plugin.version>1.10.3.Final</quarkus-plugin.version>
+        <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
+        <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
+        <quarkus.platform.version>1.10.3.Final</quarkus.platform.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -35,10 +35,10 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy-jsonb</artifactId>
         </dependency>
-<!--         <dependency> -->
-<!--             <groupId>io.quarkus</groupId> -->
-<!--             <artifactId>quarkus-jsonp</artifactId> -->
-<!--         </dependency> -->
+        <!-- <dependency> -->
+        <!-- <groupId>io.quarkus</groupId> -->
+        <!-- <artifactId>quarkus-jsonp</artifactId> -->
+        <!-- </dependency> -->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-container-image-docker</artifactId>
@@ -47,10 +47,10 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-openapi</artifactId>
         </dependency>
-<!--         <dependency> -->
-<!--             <groupId>io.quarkus</groupId> -->
-<!--             <artifactId>quarkus-jsonb</artifactId> -->
-<!--         </dependency> -->
+        <!-- <dependency> -->
+        <!-- <groupId>io.quarkus</groupId> -->
+        <!-- <artifactId>quarkus-jsonb</artifactId> -->
+        <!-- </dependency> -->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-swagger-ui</artifactId>

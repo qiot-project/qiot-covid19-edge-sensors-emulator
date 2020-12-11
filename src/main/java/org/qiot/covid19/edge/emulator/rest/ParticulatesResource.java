@@ -1,5 +1,4 @@
-package com.redhat.qiot.edge.emulator.rest;
-
+package org.qiot.covid19.edge.emulator.rest;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -8,22 +7,19 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import org.qiot.covid19.edge.emulator.services.ParticulatesService;
 
-import com.redhat.qiot.edge.emulator.services.GasService;
-
-
-@Path("/gas")
+@Path("/particulates")
 @ApplicationScoped
-public class GasResource {
-
+public class ParticulatesResource {
+    
     @Inject
-    GasService service;
+    ParticulatesService service;
 
     @GET
     @Path("/all")
     @Produces(MediaType.TEXT_PLAIN)
-    public String getGas() throws Exception {
+    public String getParticulates() throws Exception {
         return service.produceAsString();
     }
-
 }

@@ -1,4 +1,4 @@
-package com.redhat.qiot.edge.emulator.domain;
+package org.qiot.covid19.edge.emulator.domain;
 
 
 import io.quarkus.runtime.annotations.RegisterForReflection;

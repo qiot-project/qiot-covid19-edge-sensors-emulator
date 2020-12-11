@@ -1,4 +1,4 @@
-package com.redhat.qiot.edge.emulator.util;
+package org.qiot.covid19.edge.emulator.util;
 
 
 import java.util.PrimitiveIterator.OfDouble;

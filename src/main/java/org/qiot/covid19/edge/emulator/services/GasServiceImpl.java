@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.redhat.qiot.edge.emulator.services;
+package org.qiot.covid19.edge.emulator.services;
 
 
 import java.util.PrimitiveIterator;
@@ -14,13 +14,13 @@ import javax.inject.Inject;
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
 
+import org.qiot.covid19.edge.emulator.domain.GasBean;
+import org.qiot.covid19.edge.emulator.domain.GasGeneratorConfigService;
+import org.qiot.covid19.edge.emulator.util.RandomGeneratorProducer;
 import org.slf4j.Logger;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.redhat.qiot.edge.emulator.domain.GasBean;
-import com.redhat.qiot.edge.emulator.domain.GasGeneratorConfigService;
-import com.redhat.qiot.edge.emulator.util.RandomGeneratorProducer;
 
 
 /**
