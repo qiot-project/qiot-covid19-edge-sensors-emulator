@@ -5,7 +5,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.qiot.covid19.edge</groupId>
-    <artifactId>qiot-edge-sensors-emulator</artifactId>
+    <artifactId>edge-sensors-emulator</artifactId>
     <version>1.0.1</version>
     <properties>
         <surefire-plugin.version>2.22.1</surefire-plugin.version>
