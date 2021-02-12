@@ -5,4 +5,4 @@
  * @author Andrea
  *
  */
-package org.qiot.covid19.edge;
+package io.qiot.covid19.edge;

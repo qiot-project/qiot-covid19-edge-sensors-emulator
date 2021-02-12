@@ -1,4 +1,4 @@
-package org.qiot.covid19.edge.emulator.domain;
+package io.qiot.covid19.edge.emulator.domain;
 
 
 import javax.enterprise.context.ApplicationScoped;

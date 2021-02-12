@@ -1,5 +1,7 @@
-package org.qiot.covid19.edge.emulator.domain;
+package io.qiot.covid19.edge.emulator.domain;
 
+
+import javax.json.bind.annotation.JsonbProperty;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
@@ -7,10 +9,14 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
 @RegisterForReflection
 public class GasBean {
 
+    @JsonbProperty(value = "adc", nillable = true)
     private Double adc;
-    private Double nh3;
-    private Double oxidising;
-    private Double reducing;
+    @JsonbProperty(value = "nh3", nillable = false)
+    private double nh3;
+    @JsonbProperty(value = "oxidising", nillable = false)
+    private double oxidising;
+    @JsonbProperty(value = "reducing", nillable = false)
+    private double reducing;
 
     public Double getAdc() {
         return adc;

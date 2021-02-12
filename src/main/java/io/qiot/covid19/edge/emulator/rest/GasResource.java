@@ -1,4 +1,4 @@
-package org.qiot.covid19.edge.emulator.rest;
+package io.qiot.covid19.edge.emulator.rest;
 
 
 import javax.enterprise.context.ApplicationScoped;
@@ -8,7 +8,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.qiot.covid19.edge.emulator.services.GasService;
+import io.qiot.covid19.edge.emulator.services.GasService;
 
 
 @Path("/gas")

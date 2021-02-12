@@ -1,3 +1,4 @@
+package io.qiot.covid19.edge.emulator.rest;
 //package org.qiot.covid19.edge.emulator.rest;
 //
 //

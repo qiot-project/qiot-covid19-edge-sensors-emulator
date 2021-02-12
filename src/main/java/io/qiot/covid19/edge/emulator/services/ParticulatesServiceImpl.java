@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.qiot.covid19.edge.emulator.services;
+package io.qiot.covid19.edge.emulator.services;
 
 
 import java.util.PrimitiveIterator;
@@ -12,12 +12,13 @@ import javax.inject.Inject;
 import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
 
-import org.qiot.covid19.edge.emulator.domain.ParticulatesGeneratorConfigService;
-import org.qiot.covid19.edge.emulator.domain.PartuculatesBean;
-import org.qiot.covid19.edge.emulator.util.RandomGeneratorProducer;
 import org.slf4j.Logger;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import io.qiot.covid19.edge.emulator.domain.ParticulatesGeneratorConfigService;
+import io.qiot.covid19.edge.emulator.domain.PartuculatesBean;
+import io.qiot.covid19.edge.emulator.util.RandomGeneratorProducer;
 
 
 /**
@@ -87,12 +88,12 @@ class ParticulatesServiceImpl implements ParticulatesService {
         }
         PartuculatesBean bean = new PartuculatesBean();
 //        bean.setReducing(randomReducingIterator.next());
-        bean.setPM1_0(randomPM1_0Iterator.nextInt());
-        bean.setPM2_5(randomPM2_5Iterator.nextInt());
-        bean.setPM10(randomPM10Iterator.nextInt());
-        bean.setPM1_0_atm(randomPM1_0_atmIterator.nextInt());
-        bean.setPM2_5_atm(randomPM2_5_atmIterator.nextInt());
-        bean.setPM10_atm(randomPM10_atmIterator.nextInt());
+        bean.setPm1_0(randomPM1_0Iterator.nextInt());
+        bean.setPm2_5(randomPM2_5Iterator.nextInt());
+        bean.setPm10(randomPM10Iterator.nextInt());
+        bean.setPm1_0_atm(randomPM1_0_atmIterator.nextInt());
+        bean.setPm2_5_atm(randomPM2_5_atmIterator.nextInt());
+        bean.setPm10_atm(randomPM10_atmIterator.nextInt());
         bean.setGt0_3um(randomGt0_3umIterator.nextInt());
         bean.setGt0_5um(randomGt0_5umIterator.nextInt());
         bean.setGt1_0um(randomGt1_0umIterator.nextInt());
