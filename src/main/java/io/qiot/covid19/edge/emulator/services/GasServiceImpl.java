@@ -25,7 +25,7 @@ import io.qiot.covid19.edge.emulator.util.RandomGeneratorProducer;
 
 
 /**
- * @author abattagl
+ * @author andreabattaglia
  *
  */
 @ApplicationScoped

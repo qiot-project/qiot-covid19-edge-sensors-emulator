@@ -8,7 +8,7 @@ import io.qiot.covid19.edge.emulator.domain.PartuculatesBean;
 
 
 /**
- * @author abattagl
+ * @author andreabattaglia
  *
  */
 public interface ParticulatesService {

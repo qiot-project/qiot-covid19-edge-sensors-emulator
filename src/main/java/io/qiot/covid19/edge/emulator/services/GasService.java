@@ -8,7 +8,7 @@ import io.qiot.covid19.edge.emulator.domain.GasBean;
 
 
 /**
- * @author abattagl
+ * @author andreabattaglia
  *
  */
 public interface GasService {
