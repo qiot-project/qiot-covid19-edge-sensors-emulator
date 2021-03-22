@@ -80,7 +80,7 @@ class GasServiceImpl implements GasService {
     private GasBean generateMeasurement() {
         GasBean bean = new GasBean();
         if(!randomNH3Iterator.hasNext()) {
-            LOGGER.info("Iterators depleted for GAS measurements. Refreshing rundom number generators...");
+            LOGGER.info("Iterators depleted for GAS measurements. Refreshing random number generators...");
             init();
         }
         bean.setNh3(randomNH3Iterator.next());
